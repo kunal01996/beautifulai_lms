@@ -1,0 +1,103 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<!-- 
+Template Name: Educo
+Version: 2.0.0
+Author: Kamleshyadav
+Website: http://himanshusofttech.com/
+Purchase: http://themeforest.net/user/kamleshyadav
+-->
+<!--[if IE 8]> <html lang="en" class="ie8 no-js"> <![endif]-->
+<!--[if IE 9]> <html lang="en" class="ie9 no-js"> <![endif]-->
+<!--[if !IE]><!-->
+<html lang="en">
+<!--<![endif]-->
+
+<!-- Begin Head -->
+<head>
+<meta charset="utf-8" />
+<title>Educo Responsive HTML Template</title>
+<meta content="width=device-width, initial-scale=1.0" name="viewport" />
+<meta name="description"  content="Educo"/>
+<meta name="keywords" content="Educo, html template, Education template" />
+<meta name="author"  content="Kamleshyadav"/>
+<meta name="MobileOptimized" content="320" />
+
+<!--srart theme style -->
+<link href="{% static "css/main.css" %}" rel="stylesheet" type="text/css"/>
+<!-- end theme style -->
+<!-- favicon links -->
+<link rel="shortcut icon" type="image/png" href="{% static "./images/header/favicon.png" %}" />
+
+{% block custom_style %}
+{% endblock custom_style %}
+
+</head>
+<body>
+<!--Page main section start-->
+<div id="educo_wrapper">
+
+{% block header %}
+{% include './header.html' %}
+{% endblock header %}
+
+{% block slider %}\
+{% include './slider.html' %}
+{% endblock slider %}
+
+{% block expertise %}
+{% include './sections/expertise.html' %}
+{% endblock expertise %}
+
+{% block content %}
+{% endblock content %}
+
+{% block skill %}
+{% include './sections/skill.html' %}
+{% endblock skill %}
+
+{% block video %}
+{% include './sections/video.html' %}
+{% endblock video %}
+
+{% block most_recommended %}
+{% include './sections/most_recommended.html' %}
+{% endblock most_recommended %}
+
+{% block lastest_news %}
+{% include './sections/latest_news.html' %}
+{% endblock lastest_news %}
+
+{% block newsletter %}
+{% include './sections/newsletter.html' %}
+{% endblock newsletter %}
+
+{% block footer %}
+{% include './footer.html' %}
+{% endblock footer %}
+
+</div>
+<!--Page main section end-->
+
+<!--main js file start--> 
+<script type="text/javascript" src="{% static "js/jquery-1.12.2.js" %}"></script> 
+<script type="text/javascript" src="{% static "js/bootstrap.js" %}"></script> 
+<script type="text/javascript" src="{% static "js/modernizr.js" %}"></script> 
+<script type="text/javascript" src="{% static "js/owl.carousel.js" %}"></script> 
+<script type="text/javascript" src="{% static "js/jquery.stellar.js" %}"></script> 
+<script type="text/javascript" src="{% static "js/smooth-scroll.js" %}"></script> 
+<script type="text/javascript" src="{% static "js/plugins/revel/jquery.themepunch.tools.min.js" %}"></script>
+<script type="text/javascript" src="{% static "js/plugins/revel/jquery.themepunch.revolution.min.js" %}"></script>
+<script type="text/javascript" src="{% static "js/plugins/revel/revolution.extension.layeranimation.min.js" %}"></script>
+<script type="text/javascript" src="{% static "js/plugins/revel/revolution.extension.navigation.min.js" %}"></script>
+<script type="text/javascript" src="{% static "js/plugins/revel/revolution.extension.slideanims.min.js" %}"></script>
+<script type="text/javascript" src="{% static "js/plugins/countto/jquery.countTo.js" %}"></script>
+<script type="text/javascript" src="{% static "js/plugins/countto/jquery.appear.js" %}"></script>
+<script type="text/javascript" src="{% static "js/custom.js" %}"></script> 
+
+{% block custom_script %}
+{% endblock custom_script %}
+
+<!--main js file end-->
+</body>
+</html>
