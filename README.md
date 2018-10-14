@@ -17,8 +17,8 @@ To setup python v=on windows, linux or mac, visit the official [Python](https://
  * After setting up pip, use ```python pip install pipenv ``` to setup pipenv(for setting up virtual environments).
  * After you are done setting up pipenv, run the following command to start your virtual environment, ```python pipenv shell ```.
  * The above setps will setup the virtual environment on your system.
- * Now, use the following command to install django on you system ``python pip install django==2.1 (specially for version 2.1) ```python.
- * After the download is complete, to create a new project use the following command ```python django-admin startproject {name_of_the project} ```python.
+ * Now, use the following command to install django on you system ```python pip install django==2.1 (specially for version 2.1) ```python.
+ * After the download is complete, to create a new project use the following command ```python django-admin startproject {name_of_the project} ``` python.
  * ***_Learning purpose_* Since you alreay have a project that is **beautifulai_lms** just take a pull of the code and paste it in your directory.
  * Make sure to edit the _settings.py_ file in the project folder, just provide your mysql and DB credentials.
  
